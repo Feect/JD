@@ -1,0 +1,180 @@
+nav{
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+}
+nav .nContent{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+nav .nContent li{
+    float: left;
+    font-size: 16px;
+    line-height: 74px;
+    margin-left: 40px;
+    height: 74px;
+}
+nav .nContent li a{
+    color: black;
+}
+nav .nContent li a:hover{
+    color: red;
+}
+nav .nContent li:first-child{
+    margin-left: 0;
+    margin-right: 60px;
+}
+nav .nContent li:first-child img{
+    width: 103px;
+    height: 74px;
+}
+nav .nContent li:last-child img{
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    right: 0;
+    top: 25px;
+}
+nav .nContent li:last-child a:hover img{
+    filter:alpha(Opacity=70);-moz-opacity:0.7;opacity: 0.7;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* ------------------------------------------    轮播   ----------------------------------- */
+/* ------------------------------------------------------------------------------------------ */
+nav .nLunbo{
+    width: 1920px;
+    height: 550px;
+    margin: auto;
+    overflow: hidden;
+}
+nav .nLunbo .box{
+    width: 100%;
+    position: relative;
+}
+nav .nLunbo .box-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 1.5s;
+}
+nav .nLunbo .box-img:nth-child(1){
+    opacity: 1;
+}
+
+nav .nLunbo .box-left{
+    position: absolute;
+    left: 565px;
+    top: 250px;
+    font-size: 30px;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 100%;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+}
+nav .nLunbo .box-right{
+    position: absolute;
+    right: 370px;
+    top: 250px;
+    font-size: 30px;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 100%;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+nav .nLunbo .box-left:hover{
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+nav .nLunbo .box-right:hover{
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+nav .nLunbo .box-left:active{
+    opacity: 0.2;
+}
+
+nav .nLunbo .nList{
+    position: absolute;
+    left: 880px;
+    top: 515px;
+}
+nav .nLunbo .nList li{
+    float: left;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-right: 10px;
+    cursor: pointer;
+}
+nav .nLunbo .nList li:nth-child(1){
+    background-color: #fff;
+    width: 15px;
+}
+nav .nLunbo .nList li:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    /* opacity: 0.1; */
+}
+nav .nLunbo .nList li:active{
+    /* background-color: rgba(255, 255, 255, 0.2); */
+    opacity: 0.2;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* ------------------------------------------    轮播-菜单   ----------------------------------- */
+/* ------------------------------------------------------------------------------------------ */
+nav .nLunbo .menu{
+    width: 200px;
+    height: 500px;
+    background-color: #f5f5f5;
+    position: absolute;
+    top: 25px;
+    left: 350px;
+    border-radius: 10px;
+    padding-top: 4px;
+    overflow: hidden;
+}
+nav .nLunbo .menu div{
+    padding-left: 16px;
+    width: 184px;
+    height: 41px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #f5f5f5;
+    line-height: 36.6px;
+    position: relative;
+}
+nav .nLunbo .menu div:hover{
+    /* background-color: #FFFFFF; */
+    background-color: #FFFFFF;
+}
+nav .nLunbo .menu div label{
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    color: #c0c0c0;
+    font-size: 20px;
+    cursor: pointer;
+}
+nav .nLunbo .menu a{
+    font-size: 14px;
+    color: #848484;
+}
+nav .nLunbo .menu a:hover{
+    color: red;
+}
