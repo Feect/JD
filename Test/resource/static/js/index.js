@@ -78,14 +78,27 @@ $(function () {
 
 
 /* ------------------------------------------------------------------------------------------ */
-/* ------------------------------------------    nav - 轮播图 - 菜单   ----------------------------------- */
+/* ------------------------------------------    main - 限购倒计时   ----------------------------------- */
 /* ------------------------------------------------------------------------------------------ */
-// $(".mli").hover(function () {
-//         // over
-//         let chosseMenuLi = $(this).index();
-//         $(".mli").css("background-color", "#FCFCFC");
-//         $(this).css("background-color","#FFFFFF");
-//     }, function () {
-//         // out
-//     }
-// );
+let oCount = document.getElementById("m-count");
+let spans = oCount.getElementsByTagName("span");
+
+let m_timer = null;
+clearInterval(m_timer);
+m_timer = setInterval(countTime, 1000);
+
+function countTime() {
+    let endTime = new Date("2022/3/3 00:00:00");
+    let nowTime = new Date();
+    let lastTime = parseInt((endTime - nowTime) / 1000);
+    if(lastTime >= 0){
+        spans[0].innerHTML = parseInt(lastTime / 60 / 60 / 24);
+    spans[1].innerHTML = parseInt(lastTime / 60 / 60 % 24);
+    spans[2].innerHTML = parseInt(lastTime / 60 % 60);
+    spans[3].innerHTML = parseInt(lastTime % 60);
+    }else{
+        clearInterval(m_timer);
+    }
+    
+}
+
