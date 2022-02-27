@@ -9,6 +9,8 @@
 .container{
     width: 1200px;
     margin: 0 auto;
+}
+.rel{
     position: relative;
 }
 .between{
@@ -271,4 +273,208 @@ header .h-content .h-content-bottom li a:hover{
 header .h-content .h-content-bottom .redA a{
     font-weight: 700;
     color: red;
+}
+
+
+
+
+
+/**********************************************************************************************************************************
+                                                                广告导航(nav)
+***********************************************************************************************************************************/
+nav{
+    width: 100%;
+    background-color: #f4f4f4;
+}
+nav .fx{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+nav .n-left{
+    width: 190px;
+    height: 470px;
+    background-color: #fff;
+}
+/* 左侧导航(n-left) 列表内容 */
+.n-left ul{
+    margin: 10px 0;
+    height: 450px;
+    width: 190px;
+}
+.n-left li{
+    padding-left: 18px;
+    color: black;
+    height: 25px;
+    line-height: 25px;
+}
+.n-left li:hover{
+    background-color: #d9d9d9;
+}
+.n-left li a{
+    font-size: 14px;
+}
+.n-left li a:hover{
+    color: #c81623;
+}
+
+
+
+
+nav .n-content{
+    width: 790px;
+    height: 470px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav .n-right{
+    width: 190px;
+    height: 470px;
+    background-color: pink;
+}
+nav .n-content .n-content-left{
+    width: 590px;
+    height: 470px;
+    background-color: #fff;
+    position: relative;
+    /* overflow: hidden; */
+}
+.n-content .buttonLeft{
+    position: absolute;
+    width: 25px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.15);
+    z-index: 2;
+    cursor: pointer;
+    left: 0;
+    top: 50%;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+.n-content .buttonRight{
+    position: absolute;
+    width: 25px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.15);
+    z-index: 2;
+    cursor: pointer;
+    right: 0px;
+    top: 50%;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+.n-content-left div:nth-child(1):hover{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.n-content-left div:nth-child(2):hover{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.n-content-left i{
+    line-height: 35px;
+    color: #fff;
+    font-size: 20px;
+    display: block;
+}
+
+.n-content-left .buttonLists{
+    position: absolute;
+    left: 30px;
+    bottom: 20px;
+    z-index: 2;
+    display: inline-block;
+    width: 0;
+}
+.n-content-left .buttonLists ul{
+    width: 120px;
+    height: 15px;
+    z-index: 3;
+}
+.n-content-left .buttonLists li{
+    cursor: pointer;
+    float: left;
+    height: 8px;
+    width: 8px;
+    line-height: 15px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    background-color: rgba(255, 255, 255, 0.4);
+    margin-right: 4px;
+}
+.n-content-left .buttonLists li:first-child{
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+.n-content-left .images-list{
+    position: relative;
+    /* overflow: hidden; */
+}
+.n-content-left .img-items{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 1.5s;
+}
+.n-content-left .img-items:nth-child(1){
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+nav .n-content .n-content-right{
+    width: 190px;
+    height: 470px;
+    position: relative;
+}
+nav .n-content .n-content-right div:nth-child(1),
+nav .n-content .n-content-right div:nth-child(3),
+nav .n-content .n-content-right div:nth-child(5){
+    width: 190px;
+    height: 150px;
+    background-color: burlywood;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+nav .n-content .n-content-right div img{
+    width: 190px;
+    height: 150px;
+}
+nav .n-content .n-content-right div:hover{
+
+}
+nav .n-content .n-content-right .n-content-right-top{
+    
+}
+nav .n-content .n-content-right .n-content-right-center{
+    
+}
+nav .n-content .n-content-right .n-content-right-bottom{
+    
+}
+.n-content-right i{
+    line-height: 35px;
+    color: #fff;
+    font-size: 20px;
+    display: block;
+}
+.n-content-right div:nth-child(2):hover{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.n-content-right div:nth-child(4):hover{
+    background-color: rgba(0, 0, 0, 0.4);
 }
