@@ -1,0 +1,155 @@
+.shortcut{
+    height: 30px;
+    width: 100%;
+    background-color: #e3e4e5;
+    
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.between{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.shortcut .shortLeft{
+    padding-left: 7px;
+    padding-right: 7px;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.shortcut .shortLeft span{
+    color: #999;
+    /* display: inline-block; */
+}
+.shortcut .shortLeft:hover{
+    color: #e33333;
+    background-color: #fff;
+}
+.shortcut .shortLeft .iconfont{
+    color: #f10215;
+    font-size: 14px;
+}
+
+
+
+
+
+.shortcut .shortRight{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.shortcut .shortRight div{
+    padding: 0 10px;
+    position: relative;
+}
+.shortcut .shortRight .ico{
+    padding-right: 20px;
+    padding-left: 7px;
+}
+.shortcut .shortRight .redA a{
+    color: red;
+}
+.shortcut .shortRight .ico:hover{
+    background-color: #fff;
+}
+.shortcut .shortRight a{
+    color: #999;
+    line-height: 30px;
+    display: inline-block;
+}
+.shortcut .shortRight a:hover{
+    color: #e33333;
+}
+.shortcut .shortRight div::before{
+    content: "";
+    width: 1px;
+    height: 10px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 11px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.shortcut .shortRight div:nth-child(1)::before{
+    content: "";
+    width: 0;
+}
+.shortcut .shortRight div:nth-child(2)::before{
+    content: "";
+    width: 0;
+}
+
+
+
+.outside{
+    position: absolute;
+}
+.shortMapDiv{
+    top: 30px;
+    left: -1px;
+    border: 1px solid #ccc;
+    border-top: 0px;
+    padding: 10px;
+    width: 300px;
+    height: 400px;
+    display: none;
+}
+.shortMapDiv .items{
+    float: left;
+    width: 60px;
+    padding: 2px 0;
+    margin-bottom: 3px;
+}
+.shortMapDiv .items a{
+    padding: 0 8px;
+    float: left;
+    color: #999;
+    /* cursor: pointer; */
+}
+.shortMapDiv .items a:hover{
+    background-color: #f4f4f4;
+    color: #e33333;
+}
+
+
+
+
+
+
+/* ----------------------------------------------------
+-------------------------------------------------------
+                        Header            
+-------------------------------------------------------                  
+-----------------------------------------------------*/
+
+
+
+
+
+
+header{
+    width: 100%;
+    height: 140px;
+    background-color: #fff;
+    padding: 10px 0;
+}
+header .h-left{
+    width: 190px;
+    height: 120px;
+    /* position: relative; */
+    border: 1px solid black;
+    overflow: hidden;
+}
+header .h-right{
+    width: 190px;
+    height: 120px;
+    /* position: relative; */
+    border: 1px solid black;
+    overflow: hidden;
+}

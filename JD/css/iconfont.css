@@ -1,0 +1,76 @@
+@font-face {
+    font-family: "iconfont"; /* Project id 3208071 */
+    src: url('//at.alicdn.com/t/font_3208071_vyfbri6caqm.woff2?t=1645949820958') format('woff2'),
+         url('//at.alicdn.com/t/font_3208071_vyfbri6caqm.woff?t=1645949820958') format('woff'),
+         url('//at.alicdn.com/t/font_3208071_vyfbri6caqm.ttf?t=1645949820958') format('truetype');
+  }
+  
+  .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 12px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-arrow-right:before {
+    content: "\e743";
+  }
+  
+  .icon-arrow-left:before {
+    content: "\e744";
+  }
+  
+  .icon-arrow-up:before {
+    content: "\e745";
+  }
+  
+  .icon-atm:before {
+    content: "\e746";
+  }
+  
+  .icon-cart-Empty:before {
+    content: "\e747";
+  }
+  
+  .icon-map:before {
+    content: "\e758";
+  }
+  
+  .icon-service:before {
+    content: "\e764";
+  }
+  
+  .icon-Rightbutton:before {
+    content: "\e765";
+  }
+  
+  .icon-Top:before {
+    content: "\e769";
+  }
+  
+  .icon-camera:before {
+    content: "\e7b2";
+  }
+  
+  .icon-arrow-down:before {
+    content: "\e7b3";
+  }
+  
+  .icon-cart-Empty1:before {
+    content: "\e7b4";
+  }
+  
+  .icon-favorites:before {
+    content: "\e7b5";
+  }
+  
+  .icon-search:before {
+    content: "\e7b6";
+  }
+  
+  .icon-shangchuan:before {
+    content: "\e7c4";
+  }
+  
+  
