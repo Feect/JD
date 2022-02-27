@@ -446,7 +446,6 @@ nav .n-content .n-content-right div:nth-child(3),
 nav .n-content .n-content-right div:nth-child(5){
     width: 190px;
     height: 150px;
-    background-color: burlywood;
     overflow: hidden;
     margin-bottom: 10px;
 }
@@ -454,10 +453,10 @@ nav .n-content .n-content-right div img{
     width: 190px;
     height: 150px;
 }
-nav .n-content .n-content-right div:hover{
-
+nav .n-content .n-content-right div img:hover{
+    opacity: 0.7;
 }
-nav .n-content .n-content-right .n-content-right-top{
+/* nav .n-content .n-content-right .n-content-right-top{
     
 }
 nav .n-content .n-content-right .n-content-right-center{
@@ -465,7 +464,7 @@ nav .n-content .n-content-right .n-content-right-center{
 }
 nav .n-content .n-content-right .n-content-right-bottom{
     
-}
+} */
 .n-content-right i{
     line-height: 35px;
     color: #fff;
@@ -477,4 +476,12 @@ nav .n-content .n-content-right .n-content-right-bottom{
 }
 .n-content-right div:nth-child(4):hover{
     background-color: rgba(0, 0, 0, 0.4);
+}
+.n-content-right .c-r-l-button{
+    opacity: 0;
+    transition: all 0.2s;
+}
+.n-content-right .c-r-r-button{
+    opacity: 0;
+    transition: all 0.2s;
 }
