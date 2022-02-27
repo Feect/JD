@@ -1,3 +1,6 @@
+/**********************************************************************************************************************************
+                                                                顶部导航(shortcut)
+***********************************************************************************************************************************/
 .shortcut{
     height: 30px;
     width: 100%;
@@ -14,6 +17,12 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+
+
+/* 顶部导航(shortcut) 左 */
+/* 顶部导航(shortcut) 左 */
+/* 顶部导航(shortcut) 左 */
 .shortcut .shortLeft{
     padding-left: 7px;
     padding-right: 7px;
@@ -37,8 +46,9 @@
 
 
 
-
-
+/* 顶部导航(shortcut) 右 */
+/* 顶部导航(shortcut) 右 */
+/* 顶部导航(shortcut) 右 */
 .shortcut .shortRight{
     display: flex;
     flex-direction: row;
@@ -87,6 +97,10 @@
 
 
 
+
+/* 下拉菜单(shortcut)  */
+/* 下拉菜单(shortcut)  */
+/* 下拉菜单(shortcut)  */
 .outside{
     position: absolute;
 }
@@ -115,41 +129,146 @@
 .shortMapDiv .items a:hover{
     background-color: #f4f4f4;
     color: #e33333;
-} 
+}
 
 
 
 
-
-
-/* ----------------------------------------------------
--------------------------------------------------------
-                        Header            
--------------------------------------------------------                  
------------------------------------------------------*/
-
-
-
-
-
-
+/**********************************************************************************************************************************
+                                                                头部导航(Header)
+***********************************************************************************************************************************/
 header{
     width: 100%;
     height: 140px;
     background-color: #fff;
     padding: 10px 0;
 }
+/* 头部导航(Header) 左-logo图片 */
 header .h-left{
     width: 190px;
     height: 120px;
-    /* position: relative; */
-    border: 1px solid black;
     overflow: hidden;
 }
+/* 头部导航(Header) 右-二维码图片 */
 header .h-right{
     width: 190px;
     height: 120px;
-    /* position: relative; */
-    border: 1px solid black;
     overflow: hidden;
+}
+/* 头部导航(Header) 中间-搜索框 */
+header .h-content{
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header .h-content-top{
+    height: 60px;
+    padding-top: 15px;
+    padding-left: 30px;
+}
+header .h-content-top .formInput{
+    width: 546px;
+    height: 32px;
+    position: relative;
+    border: 2px solid #e2231a;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+header .h-content-top .formInput input{
+    width: 425px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 12px;
+    padding: 2px 44px 2px 17px;
+    border: 1px solid transparent;
+    outline: none;
+}
+header .h-content-top .formInput span{
+    position: absolute; 
+    right: 75px;
+    top: 10px;
+    width: 19px;
+    height: 15px;
+    overflow: hidden;
+}
+header .h-content-top .formInput span i:hover{
+    color: #e33333;
+}
+header .h-content-top .formInput span i{
+    display: block;
+    width: 20px;
+    height: 20px;
+    line-height: 14px;
+    font-size: 20px; 
+    text-align: center;
+    font-family: iconfont,sans-serif;
+    color: #9f9f9f;
+    cursor: pointer;
+}
+header .h-content-top .formInput button{
+    background-color: #e2231a;
+    width: 58px;
+    height: 32px;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+}
+header .h-content-top .formInput button i{
+    line-height: 32px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+}
+header .h-content-top .formInput button:hover{
+    background-color: #c81623;
+}
+
+/* 头部导航(Header) 中间-热词推荐 */
+header .h-content-top .hotwords{
+    margin-top: 5px;
+    line-height: 20px;
+}
+header .h-content-top .hotwords :first-child{
+    color: #c81623;
+}
+header .h-content-top .hotwords a{
+    color: #999;
+    margin-right: 10px;
+}
+header .h-content-top .hotwords a:hover{
+    color: #e33333;
+}
+
+/* 头部导航(Header) 中间-底部推荐 */
+header .h-content .h-content-bottom{
+    overflow: hidden;
+}
+header .h-content .h-content-bottom ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+header .h-content .h-content-bottom li{
+    float: left;
+    height: 40px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+header .h-content .h-content-bottom li a{
+    color: black;
+    display: inline-block;
+}
+header .h-content .h-content-bottom li a:hover{
+    color: #c81623;
+}
+header .h-content .h-content-bottom .redA a{
+    font-weight: 700;
+    color: red;
 }
