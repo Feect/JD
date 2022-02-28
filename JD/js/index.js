@@ -101,7 +101,7 @@ $(".n-content-right").hover(function () {
     }
 );
 
-
+// 右侧-图标颜色变化
 $(function () {
     let indexList = 0;
     $(".n-r-userService > div").hover(function () {
@@ -117,14 +117,19 @@ $(function () {
         }
     );
 })
-// $(".n-r-userService > div").hover(function () {
-//         // over
-//         $(".jq-img-1").css("opacity", "0");
-//         $(".jq-img-2").css("opacity", "1");
-//     }, function () {
-//         // out
-//         $(".jq-img-1").css("opacity", "1");
-//         $(".jq-img-2").css("opacity", "0");
-//     }
-// );
-// console.log($(".n-r-userService > div"));
+
+/* ------------------------------------------------------------------------------------------ */
+/* ------------------------------------------    banner   ----------------------------- */
+/* ------------------------------------------------------------------------------------------ */
+$(function () {
+    $(".jq-b-c-r-t-i").hover(function () {
+            // over
+            $(".jq-b-c-r-t-i").addClass("icon-Rightbutton-fill");
+            $(".jq-b-c-r-t-i").removeClass("icon-Rightbutton");
+        }, function () {
+            // out
+            $(".jq-b-c-r-t-i").addClass("icon-Rightbutton");
+            $(".jq-b-c-r-t-i").removeClass("icon-Rightbutton-fill");
+        }
+    );
+})
