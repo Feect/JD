@@ -115,6 +115,8 @@
     width: 300px;
     height: 400px;
     display: none;
+    background-color: #fff;
+    z-index: 3;
 }
 .shortMapDiv .items{
     float: left;
@@ -332,7 +334,7 @@ nav .n-content{
 nav .n-right{
     width: 190px;
     height: 470px;
-    background-color: pink;
+    background-color: #fff;
 }
 nav .n-content .n-content-left{
     width: 590px;
@@ -436,35 +438,26 @@ nav .n-content .n-content-left{
 
 
 
-nav .n-content .n-content-right{
+.n-content .n-content-right{
     width: 190px;
     height: 470px;
     position: relative;
 }
-nav .n-content .n-content-right div:nth-child(1),
-nav .n-content .n-content-right div:nth-child(3),
-nav .n-content .n-content-right div:nth-child(5){
+.n-content .n-content-right div:nth-child(1),
+.n-content .n-content-right div:nth-child(3),
+.n-content .n-content-right div:nth-child(5){
     width: 190px;
     height: 150px;
     overflow: hidden;
     margin-bottom: 10px;
 }
-nav .n-content .n-content-right div img{
+.n-content .n-content-right div img{
     width: 190px;
     height: 150px;
 }
-nav .n-content .n-content-right div img:hover{
+.n-content .n-content-right div img:hover{
     opacity: 0.7;
 }
-/* nav .n-content .n-content-right .n-content-right-top{
-    
-}
-nav .n-content .n-content-right .n-content-right-center{
-    
-}
-nav .n-content .n-content-right .n-content-right-bottom{
-    
-} */
 .n-content-right i{
     line-height: 35px;
     color: #fff;
@@ -484,4 +477,164 @@ nav .n-content .n-content-right .n-content-right-bottom{
 .n-content-right .c-r-r-button{
     opacity: 0;
     transition: all 0.2s;
+}
+
+
+/* --------------------nav-右侧----------------------- */
+/* 上 - 用户欢迎 */
+.n-right .n-r-userWelcome{
+    width: 190px;
+    height: 77px;
+    position: relative;
+    overflow: hidden;
+}
+/* 上 - 用户VIP */
+.n-right .n-r-userVip{
+    width: 190px;
+    height: 25px;
+    text-align: center;
+    overflow: hidden;
+}
+/* 中 - 新闻 */
+.n-right .n-r-news{
+    width: 190px;
+    height: 130px;
+    overflow: hidden;
+}
+/* 下 - 用户服务 */
+.n-right .n-r-userService{
+    width: 190px;
+    padding-top: 15px;
+    overflow: hidden;
+}
+
+/* vvvvvvvvvvvv   具体效果   vvvvvvvvvvvvvvv */
+/* 上 - 用户欢迎 */
+.n-r-uw-content{
+    position: absolute;
+    left: 20px;
+    top: 13px;
+    float: left;
+}
+.n-r-uw-content .n-r-uw-content-img{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0,0,0,.05);
+    overflow: hidden;
+}
+.n-r-uw-content .n-r-uw-content-text{
+    position: absolute;
+    top: 0;
+    margin-left: 10px;
+    height: 40px;
+    width: 106px;
+    display: inline-block;
+    
+}
+.n-r-uw-content .n-r-uw-content-text>a{
+    color: #999;
+}
+.n-r-uw-content .n-r-uw-content-text a:hover{
+    color: #c81623;
+}
+/* 上 - 用户VIP */
+.n-r-userVip a{
+    display: inline-block;
+    width: 70px;
+    height: 25px;
+    line-height: 25px;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 13px;
+    margin: 0.5px;
+    background-color: #e1251b;
+}
+.n-r-userVip a:last-child{
+    color: #e5d790;
+    background-color: black;
+}
+/* 中 - 新闻 */
+.n-r-news .n-r-news-hd{
+    width: 190px;
+    height: 30px;
+}
+.n-r-news .n-r-news-hd h5{
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 15px;
+    color: #333;
+}
+.n-r-news .n-r-news-hd a{
+    float: right;
+    font-size: 12px;
+    color: #999;
+    margin-right: 10px;
+}
+.n-r-news .n-r-news-hd a:hover{
+    color: #e1251b;
+}
+.n-r-news .n-r-news-list{
+    margin: 0 15px;
+    height: 88px;
+}
+.n-r-news .n-r-news-list li{
+    max-width: 160px;
+    width: 160px;
+    height: 16px;
+    line-height: 16px;
+    color: #999;
+    margin-bottom: 6px;
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+.n-r-news .n-r-news-list a{
+    color: #999;
+}
+.n-r-news .n-r-news-list a:hover{
+    color: #e1251b;
+}
+.n-r-news .n-r-news-list span{
+    width: 35px;
+    height: 16px;
+    line-height: 16px;
+    margin-right: 6px;
+    text-align: center;
+    vertical-align: 0;
+    font-size: 12px;
+    color: #e1251b;
+    background-color: rgba(225, 37, 27, 0.08);
+}
+/* 下 - 用户服务 */
+.n-r-userService div{
+    float: left;
+    width: 63px;
+    height: 55px;
+    text-align: center;
+}
+.n-r-userService i{
+    position: relative;
+    display: block;
+    width: 28px;
+    height: 28px;
+    margin: 0 auto;
+}
+.n-r-userService img{
+    width: 28px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.n-r-userService img:first-child{
+    opacity: 1;
+}
+.n-r-userService a:hover{
+    color: #c81623;
 }

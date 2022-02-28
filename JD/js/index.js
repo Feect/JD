@@ -100,3 +100,31 @@ $(".n-content-right").hover(function () {
         $(".c-r-r-button").css("opacity", "0");
     }
 );
+
+
+$(function () {
+    let indexList = 0;
+    $(".n-r-userService > div").hover(function () {
+            // over
+            indexList = $(this).index();
+            $(".jq-img-1").eq(indexList).css("opacity", "0");
+            $(".jq-img-2").eq(indexList).css("opacity", "1");
+        }, function () {
+            // out
+            indexList = $(this).index();
+            $(".jq-img-1").eq(indexList).css("opacity", "1");
+            $(".jq-img-2").eq(indexList).css("opacity", "0");
+        }
+    );
+})
+// $(".n-r-userService > div").hover(function () {
+//         // over
+//         $(".jq-img-1").css("opacity", "0");
+//         $(".jq-img-2").css("opacity", "1");
+//     }, function () {
+//         // out
+//         $(".jq-img-1").css("opacity", "1");
+//         $(".jq-img-2").css("opacity", "0");
+//     }
+// );
+// console.log($(".n-r-userService > div"));
